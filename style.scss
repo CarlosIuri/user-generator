@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+$large: 3.5rem;
+$medium: 1.5rem;
+$little: .8rem;
+$defaultLineHeight: 1.5;
+$defaultPadding: 10px 20px;
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(230, 230, 230);
+    font-family: 'Inconsolata', monospace;;
+    display: -webkit-box;;
+    display: -ms-flexbox;;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.user-conteiner{
+    width: 600px;
+    margin: 80px auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.user-conteiner .photo{  
+    height: 64px;
+}
+
+.user-conteiner .photo .profile-img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+
+.personal-info h1{
+    font-size: $large;
+}
+
+.personal-info p{
+    font-size: $medium;
+    margin-top: 10px;
+}
+
+//  ADRESS SECTION
+
+.adress{
+    padding: $defaultPadding;
+    line-height: $defaultLineHeight;
+}
+
+
+//  CONTACT SECTION
+
+.contact{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: $defaultPadding;
+    line-height: $defaultLineHeight;
+}
+
+// OUTROS
+
+.birthday-info, .street-info, .state-info, .postal-info, .phone-info, .smartphone-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.birthday-info{
+    -webkit-box-pack: center;    
+    -ms-flex-pack: center;    
+    justify-content: center;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btnGender{
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    font-size: $medium;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-top: 1px solid rgb(230 ,230, 230);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.btnGender:nth-child(1){
+    border-right: 1px solid rgb(230 ,230, 230);
+}
+
+.btnMale:hover{
+    -webkit-box-shadow: inset 0px 0px 50px -10px rgb(20, 255, 58); 
+    box-shadow: inset 0px 0px 50px -20px rgb(20, 255, 58); 
+}
+
+.btnFemale:hover{
+    -webkit-box-shadow: inset 0px 0px 50px -10px rgb(173, 37, 207); 
+    box-shadow: inset 0px 0px 50px -20px rgb(173, 37, 207);    
+}
+
+
+// FOOTER
+
+.footer{
+    width: 600px;
+    margin: 80px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@import 'media-query';

@@ -1,0 +1,38 @@
+@media screen and(max-width:700px) {
+    .user-conteiner, .footer{
+        width: 400px;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .user-conteiner, .footer{
+        width: 300px;
+    }
+
+    .personal-info h1{
+        font-size: $medium;
+    }
+
+    .personal-info p{
+        font-size: $little;
+    }
+
+    .birthday-info, .street-info, .state-info, .postal-info, .phone-info, .smartphone-info{
+        gap: 5px;
+        padding: 10px 0;
+        font-size: $little;
+    }
+
+    .btns{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .btnGender{
+        padding: $defaultPadding;
+        font-size: $little;
+    }
+    .footer{
+        font-size: .8rem;
+    }
+}
